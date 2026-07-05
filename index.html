@@ -42,6 +42,23 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-715QQ7T5Z9');
+
+        const names = [
+            "Aspen Johnson",
+            "Aspen Johnson · 阿斯彭·约翰逊",
+            "Aspen Johnson · アスペン・ジョンソン",
+            "Aspen Johnson · 아스펜 존슨",
+            "Aspen Johnson · Аспен Джонсон",
+            "Aspen Johnson · أسبن جونسون"
+        ];
+
+        let index = 0;
+        const nameElement = document.getElementById("name-rotator");
+
+        setInterval(() => {
+            index = (index + 1) % names.length;
+            nameElement.textContent = names[index];
+        }, 2500);
     </script>
 </head>
 
@@ -95,6 +112,10 @@
 
         <h2 class="section-label">News</h2>
         <ul class="news" aria-label="Recent news">
+            <li>
+                <span class="date">March 2026</span>
+                <span class="body">Accepted as 1 of 15 papers to present at the Atlanta Research Conference.</span>
+            </li>
             <li>
                 <span class="date">March 2026</span>
                 <span class="body">Committed to return to play basketball at VSU! <a href="https://www.instagram.com/p/DYSrTMavdnm/"></a>.</span>

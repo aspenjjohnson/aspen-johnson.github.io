@@ -56,7 +56,11 @@
         --shadow: none;
     }
 }
-
+#name-rotator {
+  transition: opacity 0.4s ease;
+  display: inline-block;
+  min-width: 100px;
+}
 /* ---------- Reset / base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -169,6 +173,7 @@ section.section + section.section { border-top: 1px solid var(--rule); }
 }
 
 /* ---------- Hero / About ---------- */
+
 .hero {
     display: flow-root;
     padding: 58px 0 44px;
